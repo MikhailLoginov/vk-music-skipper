@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 200px; font-family: -apple-system, system-ui, "Helvetica Neue", roboto, sans-serif; padding: 15px; margin: 0; background-color: #ffffff; }
+    h3 { margin: 0 0 10px 0; font-size: 14px; color: #2c3e50; }
+    .input-group { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+    input { width: 50px; padding: 4px; border: 1px solid #d1d1d1; border-radius: 4px; }
+    button { background: #0077ff; color: white; border: none; padding: 8px; border-radius: 6px; cursor: pointer; width: 100%; transition: background 0.2s; }
+    button:hover { background: #0066dd; }
+    #status { font-size: 11px; color: #27ae60; margin-top: 8px; text-align: center; height: 14px; }
+  </style>
+</head>
+<body>
+  <h3>Настройки скиппера</h3>
+  <div class="input-group">
+    <span>Скип через:</span>
+    <input type="number" id="secInput" value="60" min="1">
+    <span>сек.</span>
+  </div>
+  <button id="saveBtn">Сохранить</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
